@@ -10,15 +10,15 @@ body{
     align-content: center;
     width: 100vw;
     height: 100vh;
-}
-
-.left-part{
     background-image: url(/cover.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: center center;
     min-width: 40%;
     min-height: 80%;;
+}
+
+.left-part{
     width: 50%;
     height: 100%;
     display: flex;
@@ -27,11 +27,24 @@ body{
 
 }
 
+.right-part{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    margin: 3%;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.068);
+}
+
 .header{
     display: flex;
     justify-content: center;
     margin-top: 30%;
-    background-color: rgba(240, 248, 255, 0.24);
+    margin-left: 18%;
+    margin-right: 18%;
+    background-color: rgba(0, 0, 0, 0.116);
+    border-radius: 40px;
     max-height: 10rem;
 }
 
@@ -40,15 +53,62 @@ body{
 }
 .credit-list p, .credit-list a{
     font-size: 1.2rem;
-    text-align: right;
+    text-align: left;
+    color: dimgray;
 }
 
 .credit-list a {
-    color: rgba(255, 255, 255, 0.582);
+    color:rgba(0, 0, 0, 0.281);
+}
+
+.quote p{
+    font-size: 1.7rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.form p{
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-right:auto;
+    text-align: left;
+}
+
+.form{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.fill-in-area{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;    
 }
 
 .input{
     font-family: 'Righteous', cursive;
+    display: flex;
+    flex-flow: column;
+    margin: 1rem;
+    width: 20rem;
+}
+
+.log-in{
+    margin-top: 1rem;
+}
+
+.log-in a {
+    color: brown;
+}
+
+.log-in p, .log-in a {
+    font-size: medium;
 }
 
 img{
@@ -71,6 +131,42 @@ blockquote, blockquote+p, button{
 
 p{
     font-family: 'Roboto Condensed', sans-serif;
-
 }
 
+input{
+    border: 0px;
+    border-radius: 10px;
+    height: 3rem;
+    background-color: rgba(255, 255, 255, 0.486);
+    font-size: 1.4rem;
+    color: black;
+}
+
+input:focus{ 
+    outline:none; 
+    background-color: rgba(0, 0, 0, 0.486);
+    font-size: 1.7rem;
+    color: aliceblue;
+}
+
+label{
+    font-size: 1.5rem;
+}
+
+blockquote{
+    font-size: 1.5rem;
+}
+
+button{
+    border: 0px;
+    border-radius: 50px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 4rem;
+    width: auto;
+    font-size: medium;
+    font-weight: bold;
+    margin: 2rem;
+}
