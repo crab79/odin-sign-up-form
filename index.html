@@ -28,41 +28,41 @@
             <p>Welcom to join us!</p>    
         </div>
         <div class="form">
-            <p>Let's do it!</p>
             <form action="" method="post">
                 <div class="fill-in-area">
                     <div class="input">
                         <label for="first-name">FIRST NAME</label>
-                        <input type="text" name="user-name" id="first-name">    
+                        <input type="text" name="user-name" id="first-name" required pattern="[A-Za-z]+" placeholder="Tom">    
                     </div>
                     <div class="input">
                         <label for="last-name">LAST NAME</label>
-                        <input type="text" name="user-name" id="last-name">    
+                        <input type="text" name="user-name" id="last-name" required pattern="[A-Za-z]+" placeholder="Cruise">    
                     </div>
                     <div class="input">
                         <label for="email">EMAIL</label>
-                        <input type="email" name="user-email" id="email">    
+                        <input type="email" name="user-email" id="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="123@gmail.com">    
                     </div>
                     <div class="input">
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" name="user-phone" id="phone">    
+                        <input type="tel" name="user-phone" id="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">    
                     </div>
-                    <div class="input">
+                    <div class="input error">
                         <label for="password">PASSWORD</label>
-                        <input type="password" name="user-password" id="password">    
+                        <input type="password" name="user-password" id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required placeholder="Password123@">  
+                        <span></span>  
                     </div>
-                    <div class="input">
+                    <div class="input error">
                         <label for="check-password">CONFIRM PASSWORD</label>
-                        <input type="password" name="user-password-check" id="check-password">         
+                        <input type="password" name="user-password-check" id="check-password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required placeholder="Password123@">        
                     </div>
                     <div class="submit">
                         <button type="submit">Create Account</button>  
                     </div>
                 </div>
             </form>  
-        </div>
-        <div class="log-in">
-            <p>Already have an account? &nbsp;<a href="">Log in</a></p>
+            <div class="log-in">
+                <p>Already have an account? &nbsp;<a href="">Log in</a></p>
+            </div>    
         </div>
     </div>
 
