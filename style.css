@@ -8,7 +8,7 @@
 body{
     display: flex;
     align-content: center;
-    background-image: url("/img/cover.jpg");
+    background-image: url("img/cover.jpg");
     background-color: rgb(168, 135, 222);
     background-size: auto;
     background-repeat: no-repeat;
